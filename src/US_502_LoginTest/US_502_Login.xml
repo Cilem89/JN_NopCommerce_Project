@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+    <test name="Login">
+        <classes>
+            <class name="US_502_LoginTest.US_502_Login_POM"></class>
+        </classes>
+    </test>
+</suite>
+
