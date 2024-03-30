@@ -22,7 +22,7 @@ public class BaseDriver {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
-    @BeforeClass
+    @BeforeClass(groups = "Smoke Test")
     public void BaslangicIslemleri() {
         System.out.println("başlangıç işlemleri yapılıyor");
 
@@ -56,7 +56,7 @@ public class BaseDriver {
     }
 
 
-    @AfterClass
+    @AfterClass(groups = "Smoke Test")
     public void KapanisIslemleri() {
         // System.out.println("kapanış işlemleri yapılıyor"); //BekleKapat
 

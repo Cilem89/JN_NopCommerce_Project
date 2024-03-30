@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class US_502_Login_POM extends BaseDriver {
 
-    @Test()
+    @Test(groups = {"Smoke Test"},priority = 2)
     public void Login(){
 
         US_502_Login_Elements le=new US_502_Login_Elements();
