@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class LoginMethod extends BaseDriver {
-    public void LoginTest() {
+    public static void LoginTest() {
         System.out.println("Login Test başladı");
 
         driver.get("https://demo.nopcommerce.com/");
