@@ -36,7 +36,7 @@ public class BaseDriverParameter {
             default:
                 driver = new ChromeDriver();
         }
-        //driver.get("https://demo.nopcommerce.com/");
+        driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
