@@ -11,7 +11,6 @@ public class US_502_Login_POM extends BaseDriver {
     public void Login(){
 
         US_502_Login_Elements le=new US_502_Login_Elements();
-        driver.get("https://demo.nopcommerce.com/");
 
         le.login.click();
         le.email.sendKeys("javanator@gmail.com");
