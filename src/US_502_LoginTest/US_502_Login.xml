@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="my suit">
     <test name="Login">
+
+        <groups>
+            <run>
+                <include name="Smoke Test"></include>
+            </run>
+        </groups>
+
+
         <classes>
             <class name="US_502_LoginTest.US_502_Login_POM"></class>
         </classes>
