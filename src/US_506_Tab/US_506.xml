@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Gift Ordering Process Test">
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="US_506_Tab.US_506_TabPOM"/>
+        </classes>
+    </test>
+
+    <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="US_506_Tab.US_506_TabPOM"/>
+        </classes>
+    </test>
+
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <classes>
+            <class name="US_506_Tab.US_506_TabPOM"/>
+        </classes>
+    </test>
+</suite>

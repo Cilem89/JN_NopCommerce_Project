@@ -12,7 +12,8 @@ public class Tools {
     public static void Bekle(int sn){
 
         try {
-            Thread.sleep(sn*1000);
+            long sn1000 = 0;
+            Thread.sleep(sn1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
