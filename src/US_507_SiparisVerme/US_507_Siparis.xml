@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="my suit">
+    <test name="Siparis">
+        <classes>
+            <class name="US_507_SiparisVerme.US_507_Siparis_POM"></class>
+        </classes>
+    </test>
+</suite>
+

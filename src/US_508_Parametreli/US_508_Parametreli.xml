@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="my suit">
+    <test name="Parametreli Arama Islemi">
+        <parameter name="searchtext" value="Adobe Photoshop CS4"></parameter>
+        <classes>
+            <class name="US_508_Parametreli.US_508_Parametreli_POM"></class>
+        </classes>
+    </test>
+</suite>
+
