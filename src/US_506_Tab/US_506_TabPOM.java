@@ -35,6 +35,7 @@ public class US_506_TabPOM extends BaseDriver {
         tab.recipientsEmail.sendKeys("esma@gmail.com");
         //tab.name.sendKeys("Cilem Okkalı");
        // tab.email.sendKeys("javanator@gmail.com");
+        tab.sendername.sendKeys("esma");
         tab.message.sendKeys("ürün güzel");
         tab.add.click();
         wait.until(ExpectedConditions.visibilityOf(tab.errormessage));

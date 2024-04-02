@@ -21,18 +21,21 @@ public class US_506_TabElements {
     @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
     public List<WebElement> addtocard;
 
-    @FindBy(id = "giftcard_43_RecipientName")
+    @FindBy(id = "//div[@class='giftcard']//div")
     public WebElement recipientsName;
     @FindBy(id = "giftcard_43_RecipientEmail")
     public WebElement recipientsEmail;
 
-    @FindBy(id = "giftcard_43_SenderName")
-    public WebElement name;
+    @FindBy(id = "//div[@class='giftcard']//div[2]")
+    public WebElement sendername;
+
+    @FindBy(id = "giftcard_44_RecipientName")
+    public WebElement name2;
 
     @FindBy(id = "giftcard_43_SenderEmail")
     public WebElement email;
 
-    @FindBy(id = "giftcard_43_Message")
+    @FindBy(id = "//div[@class='giftcard']//div[3]")
     public WebElement message;
     @FindBy(id = "add-to-cart-button-43")
     public WebElement add;
