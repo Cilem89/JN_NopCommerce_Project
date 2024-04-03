@@ -14,42 +14,36 @@ public class US_506_TabElements {
     }
 
     @FindBy(css = "[class='top-menu notmobile']>:nth-child(7)")
-    public WebElement giftcards;
+    public WebElement giftCardsButton;
     @FindBy(css = ".product-title>a")
-    public List<WebElement> tabmenu;
+    public List<WebElement> giftCards;
 
-    @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
-    public List<WebElement> addtocard;
+    @FindBy(xpath= "//input[@class='recipient-name']")
+    public WebElement recipientName;
+    @FindBy(xpath= "//input[@class='recipient-email']")
+    public WebElement recipientEmail;
 
-    @FindBy(id = "//div[@class='giftcard']//div")
-    public WebElement recipientsName;
-    @FindBy(id = "giftcard_43_RecipientEmail")
-    public WebElement recipientsEmail;
+    @FindBy(xpath = "//input[@class='sender-name']")
+    public WebElement yourName;
 
-    @FindBy(id = "//div[@class='giftcard']//div[2]")
-    public WebElement sendername;
-
-    @FindBy(id = "giftcard_44_RecipientName")
-    public WebElement name2;
-
-    @FindBy(id = "giftcard_43_SenderEmail")
-    public WebElement email;
-
-    @FindBy(id = "//div[@class='giftcard']//div[3]")
-    public WebElement message;
-    @FindBy(id = "add-to-cart-button-43")
-    public WebElement add;
-
-    @FindBy(className = "content")
-    public WebElement errormessage;
-    @FindBy(xpath = "//p[@class='content']")
-    public WebElement succes;
-
-    @FindBy(xpath = "//span[@class='close']")
-    public WebElement close;
     @FindBy(css = ".cart-label")
     public WebElement cart;
 
+    @FindBy(css = ".sender-email")
+    public WebElement yourEmail;
+
     @FindBy(css = ".product-name")
     public List<WebElement> cartItems;
+
+    @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
+    public WebElement addToCart;
+
+    @FindBy(css = "[class='bar-notification error']")
+    public WebElement giftError;
+
+    @FindBy(css = ".message")
+    public WebElement message;
+
+    @FindBy(css = "[class='bar-notification success']")
+    public WebElement giftSuccess;
 }

@@ -1,40 +1,35 @@
 package US_503_PozitifNegativeLogin;
 
 import Utility.BaseDriver;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class US_503_PozitifNegativeLoginPOM extends BaseDriver {
-    @Test(groups = {"LoginTest", "Smoke"}, dataProvider = "credentials", priority = 3)
+    @Test
     public void US_503(String username, String password) {
+        wait.until(ExpectedConditions.urlContains("https://demo.nopcommerce.com/"));
         driver.get("https://demo.nopcommerce.com/");
         US_503_PozitifNegativeLoginElements pnl = new US_503_PozitifNegativeLoginElements();
         SoftAssert softAssert = new SoftAssert();
 
 
-        pnl.login.click();
-        pnl.email.sendKeys(username);
-        pnl.password.sendKeys(password);
         pnl.loginBtn.click();
-
-//        String email = null;
-//        if (pnl.email.isEnabled()) {
-//            softAssert.assertTrue(pnl.errorMessage.isDisplayed(), "Email warning couldn't displayed!");
-//        } else if (email.equals("javanator@gmail.com") && password.equals("javanator123")) {
-//            softAssert.assertTrue(pnl.message.isDisplayed(), "Login failed!");
-//        } else {
-//            softAssert.assertTrue(pnl.failedLogin.isDisplayed(), "Failed login warning couldn't displayed!");
-//        }
-//        softAssert.assertAll();
-
-
-//        softAssert.assertTrue(pnl.logout.isDisplayed());
-
+        softAssert.assertNotNull(pnl.loginButton2, "Login page couldn't displayed!");
+        wait.until(ExpectedConditions.visibilityOf(pnl.email));
+       pnl.email.sendKeys(username);
+       pnl.password.sendKeys(password);
+        pnl.loginButton2.click();
+        if (pnl.email.isEnabled()) {
+            softAssert.assertTrue(pnl.emailError.isDisplayed(), "Email warning couldn't displayed!");
+        } else if (pnl.email.equals("javanator@gmail.com") && password.equals("javanator123")) {
+            softAssert.assertTrue(pnl.logoutButton.isDisplayed(), "Login failed!");
+        } else {
+            softAssert.assertTrue(pnl.failedLogin.isDisplayed(), "Failed login warning couldn't displayed!");
+        }
+        softAssert.assertAll();
     }
-
-
 
     @DataProvider
     Object[][] datalarim(){
