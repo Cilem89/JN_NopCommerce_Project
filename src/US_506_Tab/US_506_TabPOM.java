@@ -1,63 +1,60 @@
 package US_506_Tab;
 
+
 import Utility.BaseDriver;
+import Utility.BaseDriverParameter;
 import Utility.LoginMethod;
 import Utility.Tools;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import static Utility.Tools.ListContainsString;
 
 public class US_506_TabPOM extends BaseDriver {
-
     @Test(groups = {"UITesting", "TAB Menu", "Order"}, priority = 6)
-    public void tab(){
-
+    public void TC_506() {
         driver.get("https://demo.nopcommerce.com/");
         US_506_TabElements tab= new US_506_TabElements();
-        SoftAssert softAssert=new SoftAssert();
-
         LoginMethod.LoginTest();
 
-        tab.giftcards.click();
+        SoftAssert softAssert = new SoftAssert();
 
-        wait.until(ExpectedConditions.visibilityOfAllElements(tab.tabmenu));
-        int randomSecim= Tools.randomGenerator(tab.tabmenu.size());
-        wait.until(ExpectedConditions.visibilityOfAllElements(tab.addtocard));
-        String add=tab.addtocard.get(randomSecim).getText();
-
-        WebElement addToCartButton = tab.addtocard.get(randomSecim);
-        addToCartButton.click();
-        wait.until(ExpectedConditions.visibilityOf(tab.recipientsName));
-        tab.recipientsName.sendKeys("esma");
-        tab.recipientsEmail.sendKeys("esma@gmail.com");
-        //tab.name.sendKeys("Cilem Okkalı");
-       // tab.email.sendKeys("javanator@gmail.com");
-        tab.sendername.sendKeys("esma");
-        tab.message.sendKeys("ürün güzel");
-        tab.add.click();
-        wait.until(ExpectedConditions.visibilityOf(tab.errormessage));
-        softAssert.assertTrue(tab.errormessage.isDisplayed(), "Error message couldn't be displayed!");
+        tab.giftCardsButton.click();
+        int random = Tools.randomGenerator(tab.giftCards.size() );
+        String cardName = tab.giftCards.get(random).getText();
+       tab.giftCards.get(random);
+        Tools.Bekle(1);
 
 
-        wait.until(ExpectedConditions.visibilityOf(tab.succes));
-        softAssert.assertTrue(tab.succes.getText().contains("The product has been added to your"), "The addition to the cart process failed!");
-        tab.close.click();
+        tab.addToCart.click();
+        wait.until(ExpectedConditions.visibilityOf(tab.recipientName));
+        JavascriptExecutor js=(JavascriptExecutor) driver;
 
+        js.executeScript("window.scrollTo(0,500)");
 
-        wait.until(ExpectedConditions.visibilityOfAllElements(tab.cartItems));
-        boolean isProductFoundInCart = false;
-        for (WebElement cartItem : tab.cartItems) {
-            if (cartItem.getText().contains("Gift Card")) { // Eklenen ürünün adı kontrol ediliyor
-                isProductFoundInCart = true;
-                break;
-            }
+        wait.until(ExpectedConditions.visibilityOf(tab.giftError));
+        softAssert.assertTrue(tab.giftError.isDisplayed(), "Error message couldn't displayed!");
+
+        JavascriptExecutor js2=(JavascriptExecutor) driver;
+
+        js.executeScript("window.scrollTo(0,500)");
+        if (random == 0) {
+            tab.yourName.sendKeys("Cilem Okkali");
+            tab.yourEmail.sendKeys("javanator@gmail.com") ;
         }
-        softAssert.assertTrue(isProductFoundInCart, "The added gift card could not be displayed in the cart!");
 
+        tab.recipientName.sendKeys("esma");
+        tab.recipientEmail.sendKeys("esma@gmail.com");
+        tab.yourName.sendKeys("esma dengeşik");
+        tab.yourEmail.sendKeys("dengeşik@gmail.com");
+        tab.message.sendKeys("From grief and groan, to a golden throne, beside the King of Heaven.");
+        tab.addToCart.click();
+        wait.until(ExpectedConditions.visibilityOf(tab.giftSuccess));
+        softAssert.assertTrue(tab.giftSuccess.getText().contains("The product has been added to your"), "The addition to the cart process failed!");
+        Tools.JSClick(tab.cart);
+        softAssert.assertTrue(ListContainsString(tab.cartItems, cardName), "The added gift card could not be displayed in the cart!");
         softAssert.assertAll();
-
     }
 }
