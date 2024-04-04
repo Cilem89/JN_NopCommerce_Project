@@ -6,7 +6,7 @@ The project aims to automate various user stories related to the functionality o
 ## Overview
 
 
-![Ekran görüntüsü 2024-04-05 012655](https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/a7477795-ef01-4d1a-8c9c-6d2ac011fd8d)
+<img src="https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/a7477795-ef01-4d1a-8c9c-6d2ac011fd8d" alt="Ekran görüntüsü 2024-04-05 012655" width="300" height="200">
 
 NopCommerce is an open-source e-commerce platform built using ASP.NET technologies. It is used to create online stores for businesses and can be customized by anyone. It includes many e-commerce features such as product management, payment processing, inventory tracking, SEO, etc. It has a large community that provides support and regular updates. NopCommerce is suitable for both personal and commercial purposes, offering security measures and regular updates.
 
@@ -21,7 +21,6 @@ NopCommerce is an open-source e-commerce platform built using ASP.NET technologi
 - **US_507: Computer Order Process** - Contributed by Murad Hasan
 - **US_508: Parameterized Search Process** - Contributed by Murad Hasan
 
-![Ekran görüntüsü 2024-04-05 014702](https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/93cad167-0110-4bbf-914c-68c7d49c9427)
 
 ### Team Members & GitHub Links
 - Cilem Okkalı: [GitHub](https://github.com/Cilem89)                                      
@@ -37,6 +36,10 @@ NopCommerce is an open-source e-commerce platform built using ASP.NET technologi
 4. Make sure Selenium WebDriver and TestNG libraries are added to the project's dependencies.
 5. Navigate to the test directory.
 6. Run the tests using your IDE's built-in test runner.
+
+
+<img src="https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/93cad167-0110-4bbf-914c-68c7d49c9427" alt="Ekran görüntüsü 2024-04-05 014702" width="350" height="200">
+
 
 ## Contribution Guidelines
 
