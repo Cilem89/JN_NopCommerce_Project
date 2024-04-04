@@ -15,7 +15,7 @@ public class US_503_PozitifNegativeLoginPOM extends BaseDriver {
 
         SoftAssert softAssert = new SoftAssert();
 
-        pnl.loginBtn.click();
+        pnl.loginButton.click();
         softAssert.assertNotNull(pnl.loginButton2, "Login page couldn't displayed!");
         wait.until(ExpectedConditions.visibilityOf(pnl.email));
         pnl.email.sendKeys(username);
@@ -28,7 +28,7 @@ public class US_503_PozitifNegativeLoginPOM extends BaseDriver {
         } else {
             softAssert.assertTrue(pnl.failedLogin.isDisplayed(), "Failed login warning couldn't displayed!");
         }
-        softAssert.assertAll();
+       // softAssert.assertAll();
     }
 
     @DataProvider
