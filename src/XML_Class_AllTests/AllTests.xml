@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Full test">
+
+    <test name="Registration">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+                <include name="Registration"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+                <include name="LoginTest"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"></class>
+        </classes>
+    </test>
+
+    <test name="Negativ Login">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+                <include name="LoginTest"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"/>
+        </classes>
+    </test>
+
+    <test name="TabMenuKontrol">
+        <parameter name="Text" value="Adobe Photoshop CS4"></parameter>
+
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="TAB Menu"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests">
+            </class>
+        </classes>
+    </test>
+
+    <test name="TabMenuUrunKontrol">
+        <parameter name="Searchtext" value="Laptop"></parameter>
+
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="Search"></include>
+                <include name="TAB Menu"></include>
+                <include name="Regression"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"></class>
+        </classes>
+    </test>
+
+    <test name="Hediye Siparis">
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="TAB Menu"></include>
+                <include name="Order"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"/>
+        </classes>
+    </test>
+
+    <test name="Siparis">
+        <include name="UITesting"></include>
+        <include name="TAB Menu"></include>
+        <include name="Order"></include>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"></class>
+        </classes>
+    </test>
+
+    <test name="Parametreli Arama Islemi">
+        <parameter name="searchtext" value="Adobe Photoshop CS4"></parameter>
+
+        <include name="UITesting"></include>
+        <include name="Search"></include>
+        <include name="Smoke"></include>
+        <include name="Regression"></include>
+
+        <classes>
+            <class name="XML_Class_AllTests.AllTests"></class>
+        </classes>
+    </test>
+
+</suite>
