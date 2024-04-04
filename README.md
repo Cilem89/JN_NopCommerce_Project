@@ -1,6 +1,7 @@
 # JN_NopCommerce Test Automation Project
 
-This is a test automation project for NopCommerce, an open-source e-commerce platform developed using ASP.NET technologies. The project aims to automate various user stories related to the functionality of NopCommerce.
+This is a test automation project for NopCommerce, an open-source e-commerce platform developed using ASP.NET technologies. 
+The project aims to automate various user stories related to the functionality of NopCommerce.
 
 ## Overview
 
@@ -35,8 +36,8 @@ NopCommerce is an open-source e-commerce platform built using ASP.NET technologi
 ## Contribution Guidelines
 
 1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`
+2. Create a new branch for your feature: 
 3. Implement your feature or fix.
-4. Commit your changes: `git commit -m "Description of changes"`
-5. Push to the branch: `git push origin feature-name`
+4. Commit your changes: 
+5. Push to the branch: 
 6. Submit a pull request.
