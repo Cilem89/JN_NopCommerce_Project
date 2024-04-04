@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+    <test name="Login">
+
+        <parameter name="Searchtext" value="Laptop"></parameter>
+
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="Search"></include>
+                <include name="TAB Menu"></include>
+                <include name="Regression"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_505_TabMenuUrunKontrol.US_505_TabMenuUrunKontrol_POM"></class>
+        </classes>
+    </test>
+</suite>
+
