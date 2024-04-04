@@ -9,9 +9,9 @@ import org.testng.asserts.SoftAssert;
 public class US_503_PozitifNegativeLoginPOM extends BaseDriver {
     @Test
     public void US_503(String username, String password) {
-        wait.until(ExpectedConditions.urlContains("https://demo.nopcommerce.com/"));
-        driver.get("https://demo.nopcommerce.com/");
         US_503_PozitifNegativeLoginElements pnl = new US_503_PozitifNegativeLoginElements();
+        driver.get("https://demo.nopcommerce.com/");
+
         SoftAssert softAssert = new SoftAssert();
 
 
