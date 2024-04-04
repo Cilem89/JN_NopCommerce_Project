@@ -21,8 +21,7 @@ NopCommerce is an open-source e-commerce platform built using ASP.NET technologi
 - **US_507: Computer Order Process** - Contributed by Murad Hasan
 - **US_508: Parameterized Search Process** - Contributed by Murad Hasan
 
-![Ekran görüntüsü 2024-04-05 014702]
-(https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/93cad167-0110-4bbf-914c-68c7d49c9427)
+![Ekran görüntüsü 2024-04-05 014702](https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/93cad167-0110-4bbf-914c-68c7d49c9427)
 
 ### Team Members & GitHub Links
 - Cilem Okkalı: [GitHub](https://github.com/Cilem89)                                      
