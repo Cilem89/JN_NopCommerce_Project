@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+    <test name="test1">
+
+        <parameter name="Text" value="Adobe Photoshop CS4"></parameter>
+
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="TAB Menu"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_504_Tab_Menu_Kontroll.US_504_Tab_Menu_POM">
+            </class>
+        </classes>
+    </test>
+</suite>
