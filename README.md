@@ -5,6 +5,9 @@ The project aims to automate various user stories related to the functionality o
 
 ## Overview
 
+
+![Ekran görüntüsü 2024-04-05 012655](https://github.com/Cilem89/JN_NopCommerce_Project/assets/158851663/a7477795-ef01-4d1a-8c9c-6d2ac011fd8d)
+
 NopCommerce is an open-source e-commerce platform built using ASP.NET technologies. It is used to create online stores for businesses and can be customized by anyone. It includes many e-commerce features such as product management, payment processing, inventory tracking, SEO, etc. It has a large community that provides support and regular updates. NopCommerce is suitable for both personal and commercial purposes, offering security measures and regular updates.
 
 ## User Stories & Contributors
