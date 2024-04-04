@@ -15,7 +15,7 @@ public class US_503_PozitifNegativeLoginElements {
     }
 
     @FindBy (xpath = "//a[@class='ico-login']")
-    public WebElement loginButton;
+    public WebElement login;
 
     @FindBy (xpath = "//input[@id='Email']")
     public WebElement email;
@@ -26,19 +26,20 @@ public class US_503_PozitifNegativeLoginElements {
     @FindBy(xpath = "//button[@class='button-1 login-button']")
     public WebElement loginBtn;
 
-    @FindBy(css = ".message-error.validation-summary-errors")
+
+    @FindBy(css = "[class='message-error validation-summary-errors']")
     public WebElement failedLogin;
-
-
 
     @FindBy(css = "[class='button-1 login-button']")
     public WebElement loginButton2;
-    @FindBy(css = "#Email-error")
+
+
+    @FindBy(id = "Email-error")
     public WebElement emailError;
 
     @FindBy(linkText = "Log out")
     public WebElement logoutButton;
-
-
-
 }
+
+
+
