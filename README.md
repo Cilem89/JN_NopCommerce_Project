@@ -27,7 +27,7 @@ NopCommerce is an open-source e-commerce platform built using ASP.NET technologi
 ## Installation & Running Tests
 
 1. Ensure Java JDK version 11 or above and an IDE are installed on your system.
-2. Clone the repository to your local machine: `git clone https://github.com/your-username/JN_NopCommerce.git`
+2. Clone the repository to your local machine:
 3. Open the project in your IDE.
 4. Make sure Selenium WebDriver and TestNG libraries are added to the project's dependencies.
 5. Navigate to the test directory.
