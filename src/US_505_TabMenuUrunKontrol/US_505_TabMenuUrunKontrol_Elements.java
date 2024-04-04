@@ -23,4 +23,5 @@ public class US_505_TabMenuUrunKontrol_Elements {
     public List<WebElement> searchResults;
 
 
+
 }

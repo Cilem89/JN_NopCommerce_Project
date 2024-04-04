@@ -45,5 +45,6 @@ public class US_505_TabMenuUrunKontrol_POM extends BaseDriver {
 
         Assert.assertTrue(tmuk.searchResults.contains(tmuk.searchResults.get(randomSecim)),"seçilen ürün bulunamadı");
 
+
     }
 }
