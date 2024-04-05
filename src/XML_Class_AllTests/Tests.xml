@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+    <test name="test1">
+        <parameter name="searchtext" value="Adobe Photoshop CS4"></parameter>
+        <parameter name="Searchtext" value="Laptop"></parameter>
+        <parameter name="Text" value="Adobe Photoshop CS4"></parameter>
+        <groups>
+            <run>
+                <include name="UITesting"></include>
+                <include name="Search"></include>
+                <include name="TAB Menu"></include>
+                <include name="Regression"></include>
+                <include name="Smoke"></include>
+                <include name="Registration"></include>
+                <include name="LoginTest"></include>
+                <include name="Order"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="XML_Class_AllTests.AllTests2"></class>
+        </classes>
+    </test>
+</suite>
